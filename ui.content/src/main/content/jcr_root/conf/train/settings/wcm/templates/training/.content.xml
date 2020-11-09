@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Template">
+    <jcr:content
+        cq:lastModified="{Date}2020-11-06T17:37:37.019-05:00"
+        cq:lastModifiedBy="admin"
+        cq:templateType="/conf/train/settings/wcm/template-types/empty-page"
+        jcr:description="training"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="training"
+        status="enabled"/>
+</jcr:root>
