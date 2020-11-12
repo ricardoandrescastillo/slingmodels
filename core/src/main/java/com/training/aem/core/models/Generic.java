@@ -1,31 +1,25 @@
 package com.training.aem.core.models;
 
-import com.google.gson.Gson;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 
 import org.apache.sling.api.resource.Resource;
 import javax.inject.Inject;
-import javax.inject.Named;
 
 @Model(adaptables = Resource.class, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
-public class ModelTraining {
+public class Generic {
 
     @Inject
-    @Named("generic")
-    private Generic genericData;
+    private String title;
 
     @Inject
-    private Error error;
+    private String field;
 
-    private Gson gson = new Gson();
+    @Inject
+    private String session;
 
-    public String getGenericJson(){
-        return gson.toJson(genericData);
-    }
+    @Inject
+    private String go;
 
-    public String getErrorJson(){
-        return gson.toJson(error);
-    }
 
 }
